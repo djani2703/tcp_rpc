@@ -1,0 +1,9 @@
+{application, tcp_rpc, [
+    {description, "TCP RPC server"},
+    {vsn, "0.1.0"},
+    {modules, [tcp_rpc_app, tcp_rpc_server, tcp_rpc_sup]},
+    {registered, [tcp_rpc_server, tcp_rpc_sup]},
+    {applications, [kernel, stdlib]},
+    {mod, {tcp_rpc_app, []}},
+    {env, []}
+]}.
